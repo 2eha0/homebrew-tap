@@ -5,21 +5,21 @@
 class Konnect < Formula
   desc "Konnect CLI – manage Kong Konnect from the command line"
   homepage "https://github.com/2eha0/toy-konnect-cli"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.2/konnect_0.1.2_darwin_amd64.tar.gz"
-      sha256 "66688391ee31041ecf28106731a5ece7b28fbdac40c669f0cdeb5dc1cf6340ef"
+      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.3/konnect_0.1.3_darwin_amd64.tar.gz"
+      sha256 "400bd1f2246558a7c1918eb9e23c10a666146c46e6de8e529fcdad6114b7d0aa"
 
       define_method(:install) do
         bin.install "konnect"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.2/konnect_0.1.2_darwin_arm64.tar.gz"
-      sha256 "8df73d8e92d582ebb9ede632a6c4e74ef610201d7fea9b1f0acf6d3676092c57"
+      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.3/konnect_0.1.3_darwin_arm64.tar.gz"
+      sha256 "f7bd4b7f55a1f8deff81421fd762d3feac1c85bc5153b9030d080d09f3c59536"
 
       define_method(:install) do
         bin.install "konnect"
@@ -29,15 +29,15 @@ class Konnect < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.2/konnect_0.1.2_linux_amd64.tar.gz"
-      sha256 "68669ced35a35e831160446671d17871ed92673f6763acbd1f1fe27bd4b6bcbc"
+      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.3/konnect_0.1.3_linux_amd64.tar.gz"
+      sha256 "71ccbe9a0a87feb658f88ab94716dd35e4a5eb1a9ea786e502418688201e5fbe"
       define_method(:install) do
         bin.install "konnect"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.2/konnect_0.1.2_linux_arm64.tar.gz"
-      sha256 "dd5e0a04814998e3b5e0036c6580c0beae32329346031151d84c3ca0a61b30ac"
+      url "https://github.com/2eha0/toy-konnect-cli/releases/download/v0.1.3/konnect_0.1.3_linux_arm64.tar.gz"
+      sha256 "b9d785f2cb24c5ca46f4c0e890b5cd3239c6d33cd0ba7caef8c049cd36d1c714"
       define_method(:install) do
         bin.install "konnect"
       end
